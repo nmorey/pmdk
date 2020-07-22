@@ -11,7 +11,7 @@ ifeq ($(BUILD_RPMEM), y)
 PROGS = basic hello manpage
 DIRS = fibonacci
 
-LIBS = -lrpmem -pthread
+LIBS = -lrpmem -pthread -lfabric
 else
 $(info NOTE: Skipping librpmem examples because $(BUILD_RPMEM_INFO))
 endif

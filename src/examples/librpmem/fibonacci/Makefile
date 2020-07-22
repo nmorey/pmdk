@@ -6,7 +6,7 @@
 #
 PROGS = fibonacci
 
-LIBS = -lrpmem -lpmem -pthread
+LIBS = -lrpmem -lpmem -pthread -lfabric
 
 include ../../Makefile.inc
 
